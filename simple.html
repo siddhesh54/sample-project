@@ -16,57 +16,25 @@
     <div class="container">
 
         <form action="/Shopact" method="post">
-            <div class="heading"><h1 style="color: brown;">||श्री विठ्ठल||</h1></div>
-                <div class="grid-container">
+            <div class="heading"><h1 style="color: brown;"><b>||श्री विठ्ठल||</b></h1></div>
                     <div class="item1">
                         <div class="item01"> 
-                            <label for="new">new-</label>
-                            <input  class="form-control"type="checkbox" id="new" name="new"><br>
-                            <label for="change">change-</label>
-                            <input  class="form-control" type="checkbox" id="change" name="change"><br>
-                            <label for="renew">renew-</label>
-                            <input  class="form-control" type="checkbox" id="renew" name="renew">
+                            <label for="new"style="margin-left: 18px;">नविन-</label>
+                            <input  type="checkbox" id="new" name="new" style="margin-left: 20px;"><br>
+                            <label for="change">बदल-</label>
+                            <input  style="margin-left: 40px;" type="checkbox" id="change" name="change"><br>
+                            <label for="renew" >नुतनीकरण-</label>
+                            <input  type="checkbox" id="renew" name="renew">
                            
                                 <p style="background-color: brown; color: white; border-radius: 9%;
                                 padding: 7%; width: 130px;" > दुकानाची माहिती:-</p>
                             
                         </div>
                         <div class="item02">
-                            <label for="rupies">rupies-</label>
-                            <input  class="form-control" type="number" id="rupies" name="rupies">
+                            <label for="rupies">पैसे-</label>
+                            <input   type="number" id="rupies" name="rupies">
                         </div>
                     </div>
-                    <div class="item2">
-                        <div class="item11">
-                            <label for="work" style="color: white;">office work:-</label>
-                        </div>
-                        <div class="item12">
-                            <label for="date">Entry Date</label>
-                            <input  class="form-control" type="date" id="date" name="date">
-                        </div>
-                        <div class="item13">
-                            <label for="no">Job no:-</label>
-                            <input  class="form-control" type="number" id="no" name="no">
-                        </div>
-                        <div class="item14">
-                            <label for="date">complete Date</label>
-                            <input   class="form-control"type="date" id="date" name="date">
-                        </div>
-                        <div class="item15">
-                            <label for="id">ID</label>
-                            <input  class="form-control"type="number" name="id" id="id">
-                        </div>
-                        <div class="item16">
-                                    <label for="shop act">shop act</label>
-                                    <input   type="checkbox" name="shop" id="shop">
-                                    <label for="food parvana"> food parvana</label>
-                                    <input  type="checkbox" name="parvana" id="parvana">
-                        </div>
-        
-                    </div>
-                    
-        
-                </div>
                 <div>
                     <label for="name">दुकानाचे/ऑफिसचे नाव :</label>
                     <input  class="form-control"type="text" name="name" id="name">
@@ -176,6 +144,7 @@
                            <select id="choice" name="choice">
                             <option value="name">माझी  </option>
                             <option value="name">आमची   </option>
+                           </select> 
                             दुकानाची माहिती मी त्यांना लिहून् दिलेली आहे व<br> ती बरोबर आहे.  
                             <select id="choice" name="choice">
                                 <option value="name">मी </option>
@@ -198,9 +167,10 @@
                               कोणतीही तक्रार अगर हरकत नाही आणि पुढेही नसेल, त्याकरिता संमतीपत्र, आधिकार पत्र लिहून देतो. 
                     </p>
                 </div>
-                <div>
-                    <label for="sign" style="margin-left: 40%;"><b>संमतीपत्र, अधिकारपत्र लिहून देनाराची सही :</b></label>
-                    <input  class="form-control"type="text" name="" id="sign" name="sign">
+                <div class="mb-5">
+                    <label for="Image" class="form-label"><b>संमतीपत्र, अधिकारपत्र लिहून देनाराची सही :</b></label>
+                    <input class="form-control" type="file" id="formFile" onchange="preview()">
+                    <button onclick="clearImage()" class="btn btn-primary mt-3">Click me</button>
                 </div>
                 <div>
                     <label for="name" style="margin-left: 40%;"><b>नांव</b> </label>
@@ -208,9 +178,17 @@
                 </div>
                 <hr>
                 <div>
-                    <p style="margin-left: 10%;"><input type="url" id="image" name="image" placeholder="फोटो "></p>
-                    <p style="margin-left: 70%;"><label for="text"><b>सही:-</b></label>
-                        <input  class="form-control"type="text" id="name" id="name"></p>
+                    <div class="mb-5">
+                        <label for="Image" class="form-label"><b>photo</b></label>
+                        <input class="form-control" type="file" id="formFile" onchange="preview()">
+                        <button onclick="clearImage()" class="btn btn-primary mt-3">Click me</button>
+                    </div>
+                    <div class="mb-5">
+                        <label for="Image" class="form-label"><b>सही </b></label>
+                        <input class="form-control" type="file" id="formFile" onchange="preview()">
+                        <button onclick="clearImage()" class="btn btn-primary mt-3">Click me</button>
+                    </div>
+                    <button type="submit" form="nameform" value="Submit" style="margin-left: 45%;"><b>submit</b></button>
 
                 </div>
         
